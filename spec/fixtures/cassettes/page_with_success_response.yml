@@ -1,0 +1,311 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: rakeroutes.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Dec 2013 05:48:06 GMT
+      Server:
+      - Apache
+      Accept-Ranges:
+      - bytes
+      X-Mod-Pagespeed:
+      - 1.4.26.5-3533
+      Cache-Control:
+      - max-age=0, no-cache, must-revalidate
+      Vary:
+      - Accept-Encoding,User-Agent
+      Content-Length:
+      - '15195'
+      Content-Type:
+      - text/html
+    body:
+      encoding: UTF-8
+      string: |2
+
+        <!DOCTYPE html>
+        <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+        <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+        <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+        <head>
+        <meta charset="utf-8">
+        <title>Rake Routes</title>
+        <meta name="author" content="Stephen Ball">
+        <meta name="description" content="A blog focused on the new Ruby/Rails developer. From the basics to the advanced; we try to write every article to be completely accessible.">
+        <!-- http://t.co/dKP3o1e -->
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="canonical" href="http://rakeroutes.com">
+        <link href="http://rakeroutes.com/xfavicon.png.pagespeed.ic.9sqLog9_Yb.png" rel="icon">
+        <link href="http://rakeroutes.com/stylesheets/A.screen.css.pagespeed.cf.B_lQ_FV7Zb.css" media="screen, projection" rel="stylesheet" type="text/css">
+        <script src="http://rakeroutes.com/javascripts/modernizr-2.0.js.pagespeed.jm.tWJiHFCbtH.js"></script>
+        <script src="http://rakeroutes.com/javascripts/ender.js.pagespeed.jm.RrToSBMcQ6.js"></script>
+        <script src="http://rakeroutes.com/javascripts/octopress.js.pagespeed.jm.1C8AxdO_gr.js" type="text/javascript"></script>
+        <link href="http://feeds.feedburner.com/RakeRoutes" rel="alternate" title="Rake Routes" type="application/atom+xml">
+        <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+        <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+        <meta name="readability-verification" content="AK9Dcwz9jtUc56rWDsh5HXSfVARa3Z7GDjCdBtk9"/>
+        <meta name="readability-verification" content="EAL7Vhv7W4KCBkyHjGZBxndkzqZfmbTVGRRVRFre"/>
+        </head>
+        <body>
+        <header role="banner"><hgroup>
+        <h1><a href="/">Rake Routes</a></h1>
+        <h2>Rails, Ruby, and other programming.</h2>
+        </hgroup>
+        </header>
+        <nav role="navigation"><ul class="subscription" data-subscription="rss email">
+        <li><a onclick="clicky.goal( '6111' ); clicky.pause( 500 );" href="http://feeds.feedburner.com/RakeRoutes" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+        <li><a onclick="clicky.goal('6117'); clicky.pause( 500 );" href="http://feedburner.google.com/fb/a/mailverify?uri=RakeRoutes&amp;loc=en_US" rel="subscribe-email" title="subscribe via email">Email</a></li>
+        </ul>
+        <form action="http://google.com/search" method="get">
+        <fieldset role="search">
+        <input type="hidden" name="q" value="site:rakeroutes.com"/>
+        <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+        </fieldset>
+        </form>
+        <ul class="main-navigation">
+        <li><a href="/">Blog</a></li>
+        <li><a href="/blog/archives">Archives</a></li>
+        </ul>
+        </nav>
+        <div id="main">
+        <div id="content">
+        <div class="blog-index">
+        <article>
+        <header>
+        <h1 class="entry-title"><a href="/blog/deliberate-git/">Deliberate Git</a></h1>
+        <p class="meta">
+        <time datetime="2013-08-19T19:35:00-04:00" pubdate data-updated="true">Aug 19<span>th</span>, 2013</time>
+        </p>
+        </header>
+        <div class="entry-content"><p>Hello Internet! Here&#8217;s my talk &#8220;Deliberate Git&#8221; in blog post form.</p>
+        <p>There&#8217;s also video of my presentation of <a href="http://steelcityruby.confbots.com/video/72762735">Deliberate Git at Steel City Ruby 2013</a>.</p>
+        <p>If you&#8217;d like to just read the slides they&#8217;re up on Speaker Deck: <a href="https://speakerdeck.com/sdball/deliberate-git">Deliberate
+        Git - Slides</a>. Although I highly
+        recommend just pointing people to this blog post if they want to read the talk
+        instead of watching it online.</p>
+        <p>Special thanks to PhishMe for sending me to Steel City Ruby to give this talk!</p>
+        </div>
+        <footer>
+        <a rel="full-article" href="/blog/deliberate-git/">Read on &rarr;</a>
+        </footer>
+        </article>
+        <article>
+        <header>
+        <h1 class="entry-title"><a href="/blog/customize-your-irb/">Customize Your IRB</a></h1>
+        <p class="meta">
+        <time datetime="2013-03-19T09:00:00-04:00" pubdate data-updated="true">Mar 19<span>th</span>, 2013</time>
+        </p>
+        </header>
+        <div class="entry-content"><p>You probably spend a lot of time in IRB (or the Rails console) but have you
+        taken the time to customize it? Today we&#8217;ll take a look at the things I&#8217;ve
+        added to mine, and I&#8217;ll show you how to hack in a .irbrc_rails that&#8217;s only loaded
+        in the Rails console.</p>
+        </div>
+        <footer>
+        <a rel="full-article" href="/blog/customize-your-irb/">Read on &rarr;</a>
+        </footer>
+        </article>
+        <article>
+        <header>
+        <h1 class="entry-title"><a href="/blog/program-like-a-videogamer/">Program Like a Videogamer</a></h1>
+        <p class="meta">
+        <time datetime="2013-02-06T09:01:00-05:00" pubdate data-updated="true">Feb 6<span>th</span>, 2013</time>
+        </p>
+        </header>
+        <div class="entry-content"><p>I see a lot of you out there worried about the next step in your programming
+        career. Or even worried about the next step when learning a new framework or
+        language. Today let me try to assuage some of that fear by describing my approach.</p>
+        </div>
+        <footer>
+        <a rel="full-article" href="/blog/program-like-a-videogamer/">Read on &rarr;</a>
+        </footer>
+        </article>
+        <article>
+        <header>
+        <h1 class="entry-title"><a href="/blog/gem-spotlight-interactive-editor/">Gem Spotlight: Interactive_editor</a></h1>
+        <p class="meta">
+        <time datetime="2013-01-04T12:13:00-05:00" pubdate data-updated="true">Jan 4<span>th</span>, 2013</time>
+        </p>
+        </header>
+        <div class="entry-content"><p>Today we&#8217;ll take a quick look at one of my favorite gems: interactive_editor.
+        Have you ever been in a REPL session (rails console, irb, pry, etc.) and wished
+        that you could pop open a full editor to write out some code? (Ok, maybe not
+        you pry users.) Well interactive_editor is a gem that gives you just that, as
+        well as some really nice object inspection and manipulation.</p>
+        </div>
+        <footer>
+        <a rel="full-article" href="/blog/gem-spotlight-interactive-editor/">Read on &rarr;</a>
+        </footer>
+        </article>
+        <article>
+        <header>
+        <h1 class="entry-title"><a href="/blog/subscribing-to-rubytapas-using-downcast/">Subscribing to RubyTapas Using Downcast</a></h1>
+        <p class="meta">
+        <time datetime="2012-10-19T23:17:00-04:00" pubdate data-updated="true">Oct 19<span>th</span>, 2012</time>
+        </p>
+        </header>
+        <div class="entry-content"><p>Avdi&#8217;s <a href="http://devblog.avdi.org/rubytapas/">Ruby Tapas</a> are a fantastic
+        resource for learning pieces of Ruby. Now that he and DPD have enabled
+        iTunes-compatible RSS feeds of the videos it&#8217;s easier than ever to stay current
+        with the videos.</p>
+        <p>Today I&#8217;m just going to share the steps required to add Ruby Tapas to Downcast
+        on your iPhone or iPad. It&#8217;s very easy, but it&#8217;s handy to have all the steps
+        in one place.</p>
+        </div>
+        <footer>
+        <a rel="full-article" href="/blog/subscribing-to-rubytapas-using-downcast/">Read on &rarr;</a>
+        </footer>
+        </article>
+        <article>
+        <header>
+        <h1 class="entry-title"><a href="/blog/things-most-interviewees-fail-to-discover/">Things Most Interviewees Fail to Discover</a></h1>
+        <p class="meta">
+        <time datetime="2012-08-17T08:53:00-04:00" pubdate data-updated="true">Aug 17<span>th</span>, 2012</time>
+        </p>
+        </header>
+        <div class="entry-content"><p>It&#8217;s a great time to be a Rails developer. Companies left and right are turning to Rails or using it already for efficient web development. If you know Rails and the web stack well then you have the luxury of choice: let&#8217;s make sure you make a good pick!</p>
+        </div>
+        <footer>
+        <a rel="full-article" href="/blog/things-most-interviewees-fail-to-discover/">Read on &rarr;</a>
+        </footer>
+        </article>
+        <article>
+        <header>
+        <h1 class="entry-title"><a href="/blog/10-things-i-love-about-git/">10 Things I Love About Git</a></h1>
+        <p class="meta">
+        <time datetime="2012-08-07T09:29:00-04:00" pubdate data-updated="true">Aug 7<span>th</span>, 2012</time>
+        </p>
+        </header>
+        <div class="entry-content"><p>Not everyone loves git. It&#8217;s true! But I do, and here are some reasons why.</p>
+        </div>
+        <footer>
+        <a rel="full-article" href="/blog/10-things-i-love-about-git/">Read on &rarr;</a>
+        </footer>
+        </article>
+        <article>
+        <header>
+        <h1 class="entry-title"><a href="/blog/effective-window-management-by-dividing-your-monitor-into-zones/">Effective Window Management by Dividing Your Monitor Into Zones</a></h1>
+        <p class="meta">
+        <time datetime="2012-06-22T09:21:00-04:00" pubdate data-updated="true">Jun 22<span>nd</span>, 2012</time>
+        </p>
+        </header>
+        <div class="entry-content"><p>I love my 27 inch Apple Thunderbolt display, but after some amount of neck strain I had to conclude that it&#8217;s just too big to use it like a laptop monitor and fullscreen everything.</p>
+        <p>Instead, I&#8217;ve come up with a great window management solution that capitalizes on the monitor&#8217;s strengths and gives me an awesome work environment.</p>
+        </div>
+        <footer>
+        <a rel="full-article" href="/blog/effective-window-management-by-dividing-your-monitor-into-zones/">Read on &rarr;</a>
+        </footer>
+        </article>
+        <article>
+        <header>
+        <h1 class="entry-title"><a href="/blog/getting-up-to-speed-on-a-new-git-repo/">Getting Up to Speed on a New Git Repo</a></h1>
+        <p class="meta">
+        <time datetime="2012-05-11T12:44:00-04:00" pubdate data-updated="true">May 11<span>th</span>, 2012</time>
+        </p>
+        </header>
+        <div class="entry-content"><p>Alright! You want to get up to speed with a new git repository? You got it. Here are some quick reference notes and tools to use to see what&#8217;s been going on.</p>
+        </div>
+        <footer>
+        <a rel="full-article" href="/blog/getting-up-to-speed-on-a-new-git-repo/">Read on &rarr;</a>
+        </footer>
+        </article>
+        <article>
+        <header>
+        <h1 class="entry-title"><a href="/blog/new-post-coming-soon/">New Post Coming Soon</a></h1>
+        <p class="meta">
+        <time datetime="2012-05-08T13:39:00-04:00" pubdate data-updated="true">May 8<span>th</span>, 2012</time>
+        </p>
+        </header>
+        <div class="entry-content"><p>Sorry that Rake Routes has been silent these past weeks. All at once I&#8217;ve been busy with a couple of other projects:</p>
+        <ul>
+        <li>a new job with the fine folks at <a href="http://phishme.com">PhishMe</a></li>
+        <li>the birth of our new baby girl. <a href="/images/marie.jpg">Aww</a></li>
+        </ul>
+        <p>I&#8217;m starting to get things settled into a new routine, so I&#8217;m finally carving out time to blog again!</p>
+        <p>I&#8217;ve got a new post coming soon on getting up to speed on a new git repository. This is useful for when you want start contributing to a new project or you&#8217;re starting a new job and want to get the lay of the land. Look for it this week!</p>
+        </div>
+        </article>
+        <div class="pagination">
+        <a class="prev" href="/blog/page/2/">&larr; Older</a>
+        <a href="/blog/archives">Blog Archives</a>
+        </div>
+        </div>
+        <aside class="sidebar">
+        <section>
+        <h1>Recent Posts</h1>
+        <ul id="recent_posts">
+        <li class="post">
+        <a href="/blog/deliberate-git/">Deliberate Git</a>
+        </li>
+        <li class="post">
+        <a href="/blog/customize-your-irb/">Customize your IRB</a>
+        </li>
+        <li class="post">
+        <a href="/blog/program-like-a-videogamer/">Program like a Videogamer</a>
+        </li>
+        <li class="post">
+        <a href="/blog/gem-spotlight-interactive-editor/">Gem spotlight: interactive_editor</a>
+        </li>
+        <li class="post">
+        <a href="/blog/subscribing-to-rubytapas-using-downcast/">Subscribing to RubyTapas using Downcast</a>
+        </li>
+        </ul>
+        </section>
+        <section>
+        <h1>About Me</h1>
+        <img class="right" src="http://gravatar.com/avatar/aaa2b1f12b65d33422e8cdc48d70c0f9">
+        <p>My name is Stephen Ball. I started programming computers back in the 80s
+        by copying BASIC programs from 3-2-1 Contact into our Atari 800. Now I
+        program web applications using Ruby on Rails and CoffeeScript. I love every
+        minute of it.</p>
+        <p><a href="https://twitter.com/StephenBallNC" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @StephenBallNC</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
+        </section>
+        <section>
+        <h1>Tweets for Rake Routes</h1>
+        <a class="twitter-timeline" href="https://twitter.com/search?q=rakeroutes" data-widget-id="395243196042579970">Tweets about &#8220;rakeroutes&#8221;</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </section>
+        <section>
+        <h1>My Pinboard</h1>
+        <ul id="pinboard_linkroll">Fetching linkroll&#8230;</ul>
+        <p><a href="http://pinboard.in/u:xyzzyb">My Pinboard Bookmarks &raquo;</a></p>
+        </section>
+        <script type="text/javascript">var linkroll='pinboard_linkroll';var pinboard_user="xyzzyb";var pinboard_count=3;(function(){var pinboardInit=document.createElement('script');pinboardInit.type='text/javascript';pinboardInit.async=true;pinboardInit.src='/javascripts/pinboard.js';document.getElementsByTagName('head')[0].appendChild(pinboardInit);})();</script>
+        </aside>
+        </div>
+        </div>
+        <footer role="contentinfo"><p>
+        Copyright &copy; 2013 - Stephen Ball -
+        <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+        </p>
+        </footer>
+        <script type="text/javascript">var disqus_shortname='xyzzyb';var disqus_script='count.js';(function(){var dsq=document.createElement('script');dsq.type='text/javascript';dsq.async=true;dsq.src='http://'+disqus_shortname+'.disqus.com/'+disqus_script;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(dsq);}());</script>
+        <div id="fb-root"></div>
+        <script>(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}
+        js=d.createElement(s);js.id=id;js.src="//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";fjs.parentNode.insertBefore(js,fjs);}(document,'script','facebook-jssdk'));</script>
+        <script type="text/javascript">(function(){var script=document.createElement('script');script.type='text/javascript';script.async=true;script.src='https://apis.google.com/js/plusone.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script,s);})();</script>
+        <script type="text/javascript">(function(){var twitterWidgets=document.createElement('script');twitterWidgets.type='text/javascript';twitterWidgets.async=true;twitterWidgets.src='http://platform.twitter.com/widgets.js';document.getElementsByTagName('head')[0].appendChild(twitterWidgets);})();</script>
+        <a title="Real Time Analytics" href="http://getclicky.com/66509312"><img alt="Real Time Analytics" src="//static.getclicky.com/media/links/badge.gif" border="0"/></a>
+        <script type="text/javascript">var clicky_site_ids=clicky_site_ids||[];clicky_site_ids.push(66536397);(function(){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src='//static.getclicky.com/js';(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(s);})();</script>
+        </body>
+        </html>
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: HTTP://rakeroutes.com/
+  recorded_at: Tue, 03 Dec 2013 05:48:07 GMT
+recorded_with: VCR 2.8.0
