@@ -25,4 +25,8 @@ class Hwacha
       yield url if response.success?
     end
   end
+
+  # Hwacha!!!
+  alias :fire :check
+  alias :strike_true :find_existing
 end
