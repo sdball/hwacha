@@ -19,4 +19,10 @@ class Hwacha
 
     hydra.run
   end
+
+  def find_existing(pages)
+    check(pages) do |url, response|
+      yield url if response.success?
+    end
+  end
 end

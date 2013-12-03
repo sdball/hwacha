@@ -61,4 +61,41 @@ describe Hwacha do
       end
     end
   end
+
+  describe "#find_existing" do
+    it "yields when there is a successful web response" do
+      VCR.use_cassette('page_with_success_response') do
+        expect { |probe| subject.find_existing(page_with_success_response, &probe) }.to yield_control
+      end
+    end
+
+    it "does not yield when there is not a successful web response" do
+      VCR.use_cassette('page_with_404_response') do
+        expect { |probe| subject.find_existing(page_with_404_response, &probe) }.to_not yield_control
+      end
+    end
+
+    it "yields the checked URL" do
+      VCR.use_cassette('page_with_success_response') do
+        subject.find_existing(page_with_success_response) do |url|
+          expect(url).to eq 'HTTP://%s/' % page_with_success_response
+        end
+      end
+    end
+
+    it "checks an array of URLs and executes the block for success responses" do
+      VCR.use_cassette('various_pages') do
+        successful_count = 0
+        successful_url = nil
+
+        subject.find_existing(various_pages) do |url|
+          successful_count += 1
+          successful_url = url
+        end
+
+        expect(successful_count).to eq 1
+        expect(successful_url).to match page_with_success_response
+      end
+    end
+  end
 end
