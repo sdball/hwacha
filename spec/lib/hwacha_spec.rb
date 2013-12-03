@@ -10,6 +10,9 @@ describe Hwacha do
   let(:page_with_success_response) { 'rakeroutes.com' }
   let(:page_with_404_response) { 'rakeroutes.com/this-page-does-not-exist' }
   let(:not_a_page) { '' }
+  let(:various_pages) do
+    [page_with_success_response, page_with_404_response, not_a_page]
+  end
 
   describe "#check" do
     it "yields when there is a successful web response" do
@@ -43,6 +46,18 @@ describe Hwacha do
         subject.check(page_with_success_response) do |_, response|
           expect(response.success?).to be_true
         end
+      end
+    end
+
+    it "checks an array of pages and executes the block for each" do
+      VCR.use_cassette('various_pages') do
+        pages_checked = 0
+
+        subject.check(various_pages) do |page, response|
+          pages_checked += 1
+        end
+
+        expect(pages_checked).to eq various_pages.size
       end
     end
   end
