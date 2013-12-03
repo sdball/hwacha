@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: rakeroutes.com/this-page-does-not-exist
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Tue, 03 Dec 2013 05:52:28 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '341'
+      Content-Type:
+      - text/html; charset=iso-8859-1
+    body:
+      encoding: UTF-8
+      string: |
+        <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+        <html><head>
+        <title>404 Not Found</title>
+        </head><body>
+        <h1>Not Found</h1>
+        <p>The requested URL /this-page-does-not-exist was not found on this server.</p>
+        <p>Additionally, a 404 Not Found
+        error was encountered while trying to use an ErrorDocument to handle the request.</p>
+        </body></html>
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: HTTP://rakeroutes.com/this-page-does-not-exist
+  recorded_at: Tue, 03 Dec 2013 05:52:28 GMT
+recorded_with: VCR 2.8.0
