@@ -32,7 +32,7 @@ describe Hwacha do
 
     it "yields the checked URL" do
       VCR.use_cassette('page_with_success_response') do
-        subject.check(page_with_success_response) do |url, response|
+        subject.check(page_with_success_response) do |url, _|
           expect(url).to eq "HTTP://%s/" % page_with_success_response
         end
       end
@@ -40,7 +40,7 @@ describe Hwacha do
 
     it "yields the web response" do
       VCR.use_cassette('page_with_success_response') do
-        subject.check(page_with_success_response) do |url, response|
+        subject.check(page_with_success_response) do |_, response|
           expect(response.success?).to be_true
         end
       end
