@@ -12,7 +12,7 @@ class Hwacha
     Array(pages).each do |page|
       request = Typhoeus::Request.new(page)
       request.on_complete do |response|
-        yield response.effective_url
+        yield response.effective_url, response
       end
       hydra.queue request
     end

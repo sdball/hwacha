@@ -13,5 +13,11 @@ describe Hwacha do
         expect(url).to eq "HTTP://%s/" % page_with_success_response
       end
     end
+
+    it "yields the web response" do
+      subject.check(page_with_success_response) do |url, response|
+        expect(response.success?).to be_true
+      end
+    end
   end
 end
