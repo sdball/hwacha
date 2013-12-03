@@ -1,5 +1,7 @@
 require "hwacha/version"
 
-module Hwacha
-  # Your code goes here...
+class Hwacha
+  def check(pages)
+    yield
+  end
 end
