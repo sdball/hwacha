@@ -6,11 +6,11 @@ class Hwacha
     @max_concurrent_requests = max_concurrent_requests
   end
 
-  def check(pages)
+  def check(urls)
     hydra = Typhoeus::Hydra.new(:max_concurrency => @max_concurrent_requests)
 
-    Array(pages).each do |page|
-      request = Typhoeus::Request.new(page)
+    Array(urls).each do |url|
+      request = Typhoeus::Request.new(url)
       request.on_complete do |response|
         yield response.effective_url, response
       end
@@ -20,8 +20,8 @@ class Hwacha
     hydra.run
   end
 
-  def find_existing(pages)
-    check(pages) do |url, response|
+  def find_existing(urls)
+    check(urls) do |url, response|
       yield url if response.success?
     end
   end

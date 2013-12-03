@@ -20,5 +20,5 @@ http_interactions:
     http_version: 
     adapter_metadata:
       effective_url: ''
-  recorded_at: Tue, 03 Dec 2013 05:52:28 GMT
+  recorded_at: Tue, 03 Dec 2013 06:07:19 GMT
 recorded_with: VCR 2.8.0
