@@ -54,7 +54,7 @@ want to fire a bunch of requests and find pages that successfully respond. Ok!
 ```ruby
 hwacha = Hwacha.new
 
-Hwacha.find_existing(array_of_webpage_urls) do |url|
+hwacha.find_existing(array_of_webpage_urls) do |url|
   # this block will be called for all urls that successfully respond!
   # hwacha!
 end
