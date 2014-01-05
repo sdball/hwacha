@@ -1,3 +1,3 @@
 class Hwacha
-  VERSION = "0.1.0" # woo, beta!
+  VERSION = "0.2.0"
 end
