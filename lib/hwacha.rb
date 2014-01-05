@@ -1,9 +1,20 @@
 require "hwacha/version"
+require "hwacha/config"
 require "typhoeus"
 
 class Hwacha
+  attr_reader :max_concurrent_requests
+
   def initialize(max_concurrent_requests=20)
-    @max_concurrent_requests = max_concurrent_requests
+    config = Hwacha::Config.new
+
+    # support the simple legacy API
+    config.max_concurrent_requests = max_concurrent_requests
+
+    # the nice configuration object API
+    yield config if block_given?
+
+    @max_concurrent_requests = config.max_concurrent_requests
   end
 
   def check(urls)

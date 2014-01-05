@@ -2,7 +2,7 @@
 
 Hwacha! Harness the power of Typhoeus to quickly check webpage responses.
 
-## Example
+## Examples
 
 Check a single page.
 
@@ -17,14 +17,21 @@ hwacha.check('rakeroutes.com') do |url, response|
 end
 ```
 
+Configure the maximum number of concurrent requests.
+
+```ruby
+hwacha = Hwacha.new do |config|
+  config.max_concurrent_requests = 10 # 20 is the default
+end
+
+# a legacy integer argument is also supported
+hwacha = Hwacha.new(10)
+```
+
 Check a bunch of pages! Hwacha!
 
 ```ruby
-# 20 is also the default
-maximum_number_of_requests_to_work_on_in_parallel = 20
-
-hwacha = Hwacha.new(maximum_number_of_requests_to_work_on_in_parallel)
-
+hwacha = Hwacha.new
 hwacha.check(array_of_webpage_urls) do |url, response|
   # each url is enqueued in parallel using the powerful Typhoeus library!
   # this block is yielded the url and response object for every response!
