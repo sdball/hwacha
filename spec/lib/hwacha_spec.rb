@@ -6,7 +6,24 @@ VCR.configure do |c|
   c.hook_into :typhoeus
 end
 
-describe Hwacha do
+describe Hwacha, "initialization" do
+  it "defaults to 20 max concurrent requests" do
+    expect(Hwacha.new.max_concurrent_requests).to eq 20
+  end
+
+  it "takes an integer argument to set the number of max concurrent requests" do
+    expect(Hwacha.new(10).max_concurrent_requests).to eq 10
+  end
+
+  it "can set max_concurrent_requests via a configuration object" do
+    hwacha = Hwacha.new do |config|
+      config.max_concurrent_requests = 10
+    end
+    expect(hwacha.max_concurrent_requests).to eq 10
+  end
+end
+
+describe Hwacha, "instance methods" do
   let(:url_with_success_response) { 'rakeroutes.com' }
   let(:url_with_404_response) { 'rakeroutes.com/this-url-does-not-exist' }
   let(:not_a_url) { '' }
