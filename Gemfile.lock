@@ -24,6 +24,7 @@ GEM
     rspec-mocks (2.14.4)
     typhoeus (0.6.6)
       ethon (~> 0.6.1)
+    vcr (2.8.0)
 
 PLATFORMS
   ruby
@@ -33,3 +34,4 @@ DEPENDENCIES
   hwacha!
   rake
   rspec
+  vcr
