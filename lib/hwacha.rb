@@ -3,7 +3,7 @@ require "hwacha/config"
 require "typhoeus"
 
 class Hwacha
-  attr_reader :max_concurrent_requests
+  attr_reader :config
 
   def initialize(max_concurrent_requests=20)
     config = Hwacha::Config.new
@@ -14,11 +14,11 @@ class Hwacha
     # the nice configuration object API
     yield config if block_given?
 
-    @max_concurrent_requests = config.max_concurrent_requests
+    @config = config
   end
 
   def check(urls)
-    hydra = Typhoeus::Hydra.new(:max_concurrency => @max_concurrent_requests)
+    hydra = build_hydra
 
     Array(urls).each do |url|
       request = Typhoeus::Request.new(url)
@@ -40,4 +40,8 @@ class Hwacha
   # Hwacha!!!
   alias :fire :check
   alias :strike_true :find_existing
+
+  def build_hydra
+    Typhoeus::Hydra.new(config.options)
+  end
 end
