@@ -1,4 +1,4 @@
-# Hwacha [![Build Status](https://travis-ci.org/sdball/hwacha.png?branch=master)](https://travis-ci.org/sdball/hwacha)
+# Hwacha [![Build Status](https://travis-ci.org/sdball/hwacha.png?branch=master)](https://travis-ci.org/sdball/hwacha) [![Gem Version](https://badge.fury.io/rb/hwacha.png)](http://badge.fury.io/rb/hwacha)
 
 Hwacha! Harness the power of Typhoeus to quickly check webpage responses.
 
