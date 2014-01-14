@@ -28,6 +28,14 @@ end
 hwacha = Hwacha.new(10)
 ```
 
+Follow redirects!
+
+```ruby
+hwacha = Hwacha.new do |config|
+  config.follow_redirects = true
+end
+```
+
 Check a bunch of pages! Hwacha!
 
 ```ruby

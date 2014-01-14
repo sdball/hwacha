@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    hwacha (1.0.0)
+    hwacha (1.0.1)
       typhoeus
 
 GEM
