@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.rakeroutes.com/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Date:
+      - Tue, 14 Jan 2014 03:03:38 GMT
+      Server:
+      - Apache
+      Location:
+      - http://rakeroutes.com/
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '230'
+      Content-Type:
+      - text/html; charset=iso-8859-1
+    body:
+      encoding: US-ASCII
+      string: ! '<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+
+        <html><head>
+
+        <title>301 Moved Permanently</title>
+
+        </head><body>
+
+        <h1>Moved Permanently</h1>
+
+        <p>The document has moved <a href="http://rakeroutes.com/">here</a>.</p>
+
+        </body></html>
+
+'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: !binary |-
+        aHR0cDovL3d3dy5yYWtlcm91dGVzLmNvbS8=
+  recorded_at: Tue, 14 Jan 2014 03:03:37 GMT
+recorded_with: VCR 2.8.0

@@ -21,7 +21,7 @@ class Hwacha
     hydra = build_hydra
 
     Array(urls).each do |url|
-      request = Typhoeus::Request.new(url)
+      request = Typhoeus::Request.new(url, config.request_options)
       request.on_complete do |response|
         yield response.effective_url, response
       end
@@ -42,6 +42,6 @@ class Hwacha
   alias :strike_true :find_existing
 
   def build_hydra
-    Typhoeus::Hydra.new(config.options)
+    Typhoeus::Hydra.new(config.hydra_options)
   end
 end
