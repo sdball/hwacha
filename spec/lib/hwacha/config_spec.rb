@@ -25,18 +25,38 @@ describe Hwacha::Config do
   end
 
   describe "#request_options" do
-    context "when follow_redirects option is set" do
-      let(:follow_redirects) { true }
-      let(:follow_redirects_option) do
-        { :followlocation => follow_redirects }
-      end
-
+    context "when follow_redirects option is true" do
       before do
-        subject.follow_redirects = follow_redirects
+        subject.follow_redirects = true
       end
 
-      it "exports as followlocation in a hash" do
-        expect(subject.request_options).to include follow_redirects_option
+      it "exports followlocation as true" do
+        expect(subject.request_options.fetch(:followlocation)).to be_true
+      end
+    end
+
+    context "when follow_redirects option is not set" do
+      it "exports followlocation as false" do
+        expect(subject.request_options.fetch(:followlocation)).to be_false
+      end
+    end
+
+    context "when follow_redirects option is false" do
+      it "exports followlocation as false" do
+        expect(subject.request_options.fetch(:followlocation)).to be_false
+      end
+    end
+
+    context "when ricochet is set" do
+      it "treats ricochet as an alias for follow_redirects" do
+        subject.ricochet = true
+        expect(subject.request_options.fetch(:followlocation)).to be_true
+      end
+
+      it "has a lower precedence than setting follow_redirects" do
+        subject.ricochet = true
+        subject.follow_redirects = false
+        expect(subject.request_options.fetch(:followlocation)).to be_false
       end
     end
   end
