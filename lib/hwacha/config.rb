@@ -20,8 +20,10 @@ class Hwacha
     end
 
     def follow_redirects_option
-      return { :followlocation => false } if follow_redirects.nil?
-      { :followlocation => !!follow_redirects }
+      followlocation = false
+      followlocation = !!ricochet unless ricochet.nil?
+      followlocation = !!follow_redirects unless follow_redirects.nil?
+      { :followlocation => followlocation }
     end
   end
 end
