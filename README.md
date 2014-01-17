@@ -96,6 +96,11 @@ hwacha.strike_true(unknown_pages) do |url|
   successful += 1
 end
 puts "Hwacha! #{successful} hits!"
+
+# setting config.ricochet will also follow redirects
+hwacha = Hwacha.new do |config|
+  config.ricochet = true
+end
 ```
 
 ## Installation
